@@ -1,6 +1,6 @@
-# Student Management System App in Python Using Streamlit and pandas
+# Student Data Management System App using Streamlit
 
-This is a simple student management system built using Streamlit. It allows you to view, add, edit, and remove student records stored in a CSV file.
+This is a simple student management system built using Streamlit and Pandas. It allows you to view, add, edit, and remove student records stored in a CSV file.
 
 ## Features
 
@@ -58,22 +58,13 @@ This is a simple student management system built using Streamlit. It allows you 
 
 5. If you have already `students.csv` file then it will use it otherwise it will automatically make a new file named `students.csv` in project folder with the following columns:
 
-    ```csv
-    Name , Roll No , Department , Phone No , Address , City
-    ```
+    `Name , Roll No , Department , Phone No , Address , City`
 
 ## Usage
+6. **Run the Code**
 
-Run the Streamlit app:
-
-## Usage
-
-Run the Streamlit app:
-
-    ```sh
-
-streamlit run app.py
-
+    ```sh 
+    streamlit run app.py
     ```
 
 # License
