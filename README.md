@@ -72,7 +72,7 @@ Run the Streamlit app:
 
     ```sh
 
-    streamlit run app.py
+streamlit run app.py
 
     ```
 
