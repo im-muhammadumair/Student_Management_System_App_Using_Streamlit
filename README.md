@@ -22,10 +22,13 @@ This is a simple student management system built using Streamlit. It allows you 
 1. **Clone the repository:**
 
     - Clone Github repository to your local_machine or Folder
+
     ```sh
     git clone https://github.com/im-muhammadumair/Student_Management_System_App_Using_Streamlit.git
     ```
+    
     - Move to inside the project folder
+
     ```sh
     cd Student_Management_System_App_Using_Streamlit
     ```
@@ -33,10 +36,13 @@ This is a simple student management system built using Streamlit. It allows you 
 2. If you have a `Virtual Environment` then make sure active it before install packages or Otherwise you can move on 3rd step:
 
     - Making new virtual environment
+
     ```sh
     python -m venv env            
     ```
+
     - Activating Virtual environment
+
     ```sh
     env\Scripts\activate          
     ```
@@ -49,6 +55,7 @@ This is a simple student management system built using Streamlit. It allows you 
 
 4. Add your `logo.png` file to the project directory.
 
+
 5. If you have already `students.csv` file then it will use it otherwise it will automatically make a new file named `students.csv` in project folder with the following columns:
 
     ```csv
@@ -59,7 +66,8 @@ This is a simple student management system built using Streamlit. It allows you 
 
 Run the Streamlit app:
 
-    ```sh
+    ```
     streamlit run code.py
     ```
-
+# License
+This project is licensed under the MIT License.
