@@ -4,11 +4,12 @@ This is a simple student management system built using Streamlit. It allows you 
 
 ## Features
 
-- **View Students:** Display the list of all students.
-- **Add Student:** Add a new student to the database.
-- **Edit Student:** Edit the details of an existing student.
-- **Remove Student:** Remove a student from the database.
+- **View Students:** Display the list of all students info.
+- **Add Student:** Add a new student info to the database.
+- **Edit Student:** Edit the info of an existing student.
+- **Remove Student:** Remove a student info from the database.
 - **Exit:** Close the application.
+- ***Work as Local Database:*** It will save student info for lifetime
 
 ## Prerequisites
 
@@ -18,25 +19,32 @@ This is a simple student management system built using Streamlit. It allows you 
 - Pillow (PIL)
 
 ## Installation
+1. **Clone the repository:**
+```sh
+    git clone https://github.com/im-muhammadumair/Student_Management_System_App_Using_Streamlit.git
+    cd Student_Management_System_App_Using_Streamlit
 
-1. Clone the repository:
+```
+
+2. If you have a `Virtual Environment` then make sure active it before install packages or Otherwise you can move on second step:
 
     ```sh
-    pip install 
+    python -m venv env            # Making new virtual environment
+    env\Scripts\activate          # Activating Virtual environment
     ```
 
-2. Install the required packages:
+3. Install Require packages from `requirements.txt`:
 
     ```sh
-    pip install streamlit pandas pillow
+    pip install -r requirements.txt
     ```
 
-3. Add your `logo.png` file to the project directory.
+4. Add your `logo.png` file to the project directory.
 
-4. Create a `students.csv` file with the following columns if it doesn't already exist:
+4. If you have already `students.csv` file then it will use it otherwise it will automatically make a new file named `students.csv` in project folder with the following columns:
 
     ```csv
-    Name,Roll No,Department,Phone No,Address,City
+    Name , Roll No , Department , Phone No , Address , City
     ```
 
 ## Usage
@@ -44,5 +52,6 @@ This is a simple student management system built using Streamlit. It allows you 
 Run the Streamlit app:
 
 ```sh
-streamlit run app.py
+    streamlit run code.py
+    ```
 
