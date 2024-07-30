@@ -22,8 +22,7 @@ This is a simple student management system built using Streamlit. It allows you 
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/your-username/student-management-system.git
-    cd student-management-system
+    pip install 
     ```
 
 2. Install the required packages:
@@ -46,3 +45,4 @@ Run the Streamlit app:
 
 ```sh
 streamlit run app.py
+
