@@ -1,1 +1,1 @@
-# Student-Management-System-App-Using-Streamlit_and_pandas
+# Student Management System App Using Streamlit and pandas (2024 Concept)
