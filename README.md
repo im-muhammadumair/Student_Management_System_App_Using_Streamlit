@@ -21,13 +21,13 @@ This is a simple student management system built using Streamlit. It allows you 
 ## Installation
 1. **Clone the repository:**
 
-    - Clone Github repository to your local_machine or Folder
+     Clone Github repository to your local_machine or Folder
 
     ```sh
     git clone https://github.com/im-muhammadumair/Student_Management_System_App_Using_Streamlit.git
     ```
     
-    - Move to inside the project folder
+     Move to inside the project folder
 
     ```sh
     cd Student_Management_System_App_Using_Streamlit
@@ -35,13 +35,13 @@ This is a simple student management system built using Streamlit. It allows you 
 
 2. If you have a `Virtual Environment` then make sure active it before install packages or Otherwise you can move on 3rd step:
 
-    - Making new virtual environment
+     Making new virtual environment
 
     ```sh
     python -m venv env            
     ```
 
-    - Activating Virtual environment
+     Activating Virtual environment
 
     ```sh
     env\Scripts\activate          
