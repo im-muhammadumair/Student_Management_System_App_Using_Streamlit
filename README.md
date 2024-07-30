@@ -58,7 +58,9 @@ This is a simple student management system built using Streamlit and Pandas. It 
 
 5. If you have already `students.csv` file then it will use it otherwise it will automatically make a new file named `students.csv` in project folder with the following columns:
 
-    `Name , Roll No , Department , Phone No , Address , City`
+    ```sh 
+    Name , Roll No , Department , Phone No , Address , City
+    ```
 
 ## Usage
 6. **Run the Code**
