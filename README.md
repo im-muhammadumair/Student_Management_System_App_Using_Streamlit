@@ -70,11 +70,11 @@ Run the Streamlit app:
 
 Run the Streamlit app:
 
-```sh
+    ```sh
 
     streamlit run app.py
 
-```
+    ```
 
 # License
 This project is licensed under the MIT License.
