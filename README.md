@@ -66,8 +66,15 @@ This is a simple student management system built using Streamlit. It allows you 
 
 Run the Streamlit app:
 
-    ```
-    streamlit run code.py
-    ```
+## Usage
+
+Run the Streamlit app:
+
+```sh
+
+    streamlit run app.py
+
+```
+
 # License
 This project is licensed under the MIT License.
