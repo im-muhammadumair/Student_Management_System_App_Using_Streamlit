@@ -9,7 +9,7 @@ This is a simple student management system built using Streamlit. It allows you 
 - **Edit Student:** Edit the info of an existing student.
 - **Remove Student:** Remove a student info from the database.
 - **Exit:** Close the application.
-- ***Work as Local Database:*** It will save student info for lifetime
+- **Work as Local Database:** It will save student info for lifetime
 
 ## Prerequisites
 
