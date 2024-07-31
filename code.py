@@ -6,12 +6,10 @@ import os
 # Wide Screen applier
 st.set_page_config(layout="wide")
 
-
 CSV_FILE = 'students.csv'
 COLUMNS = ['Name', 'Roll No', 'Department', 'Phone No', 'Address', 'City']
 
 # Load data -->
-
 def load_data():
     if os.path.exists(CSV_FILE):
         return pd.read_csv(CSV_FILE, dtype=str)
@@ -19,17 +17,14 @@ def load_data():
         return pd.DataFrame(columns=COLUMNS)
 
 # Save data -->
-
 def save_data(df):
     df.to_csv(CSV_FILE, index=False)
 
 # Clean roll number -->
-
 def clean_roll_no(roll_no):
     return roll_no.strip().lower()
 
 # Header Columns -->
-
 col1, col2, col3 = st.columns([1, 2, 2])
 cols1, cols2, col3 = st.columns([1, 2, 2])
 
@@ -38,25 +33,21 @@ with col1:
     st.image(img, width=1000)
 
 # Sidebar Menu -->
-
 st.sidebar.title("Menu")
 options = ["View Students", "Add Student", "Edit Student", "Remove Student", "Exit"]
 choice = st.sidebar.selectbox("Choose an option", options)
 
 # Load existing data -->
+data = load_data()
 
-with cols2:
-    data = load_data()
+# (i): Display Students -->
+if choice == "View Students":
+    st.subheader("View Students")
+    st.write(data)
 
-    # (i): Display Students -->
-
-    if choice == "View Students":
-        st.subheader("View Students")
-        st.dataframe(data)
-
-    # (ii): Add Students -->
-
-    elif choice == "Add Student":
+# (ii): Add Students -->
+elif choice == "Add Student":
+    with cols2:
         st.subheader("Add Student")
         with st.form(key='add_student_form'):
             name = st.text_input("Name")
@@ -68,7 +59,7 @@ with cols2:
             submit_button = st.form_submit_button(label='Add Student')
 
         if submit_button:
-            if name and roll_no and phone_no and address and city and department: 
+            if name and roll_no and phone_no and address and city and department:
                 clean_roll = clean_roll_no(roll_no)
                 new_student = pd.DataFrame([[name, clean_roll, department, phone_no, address, city]], columns=COLUMNS)
                 data = pd.concat([data, new_student], ignore_index=True)
@@ -77,9 +68,9 @@ with cols2:
             else:
                 st.error("Please fill in all fields")
 
-    # (iii): Edit Students -->
-
-    elif choice == "Edit Student":
+# (iii): Edit Students -->
+elif choice == "Edit Student":
+    with cols2:
         st.subheader("Edit Student")
         roll_no_to_edit = st.text_input("Enter Roll No of student to edit")
 
@@ -109,9 +100,9 @@ with cols2:
             else:
                 st.error("Student not found")
 
- # (iv): Remove Students -->
-
-    elif choice == "Remove Student":
+# (iv): Remove Students -->
+elif choice == "Remove Student":
+    with cols2:
         st.subheader("Remove Student")
         roll_no_to_remove = st.text_input("Enter Roll No of student to remove")
 
@@ -125,7 +116,8 @@ with cols2:
                 st.error("Student not found")
 
 # (v): Exit APP -->
-    elif choice == "Exit":
+elif choice == "Exit":
+    with cols2:
         st.subheader("Exit Application")
         st.write("You can now close the browser tab to exit the application.")
 
