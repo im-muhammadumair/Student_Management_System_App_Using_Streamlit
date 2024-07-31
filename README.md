@@ -1,6 +1,6 @@
 # Student Data Management System App using Streamlit
 
-This is a simple student management system built using Streamlit and Pandas. It allows you to view, add, edit, and remove student records stored in a CSV file.
+This is a professional and easy to use student data management system app built by using Streamlit and Pandas. It allows you to view, add, edit, and remove student records stored in a CSV file.
 
 ## Features
 
@@ -27,7 +27,7 @@ This is a simple student management system built using Streamlit and Pandas. It 
     git clone https://github.com/im-muhammadumair/Student_Management_System_App_Using_Streamlit.git
     ```
     
-     Move to inside the project folder
+     Move to inside the repository
 
     ```sh
     cd Student_Management_System_App_Using_Streamlit
