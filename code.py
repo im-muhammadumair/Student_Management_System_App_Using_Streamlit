@@ -4,7 +4,7 @@ from PIL import Image
 import os
 
 # Wide Screen applier
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title = 'Student Data management App', page_icon = 'icon.png')
 
 CSV_FILE = 'students.csv'
 COLUMNS = ['Name', 'Roll No', 'Department', 'Phone No', 'Address', 'City']
